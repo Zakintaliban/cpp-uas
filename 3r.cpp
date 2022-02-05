@@ -5,7 +5,7 @@
 using namespace std;
 
 int add(int n);
-// menginisialisasikan recursion function
+// menginisialisasikan fungsi rekursif
 
 int main() {
   int n;

@@ -7,7 +7,9 @@ using namespace std;
 int main() {
   // 2d array
   int num[3][5] = {
-      {10, 20, 30, 40, 40}, {11, 12, 90, 14, 15}, {50, 60, 70, 80, 90}};
+      {10, 90, 30, 40, 40}, 
+      {11, 12, 90, 14, 15}, 
+      {50, 60, 70, 80, 90}};
 
   int ROWS = 3, COLS = 5, i, j;
   // menginisialisasikan pointer

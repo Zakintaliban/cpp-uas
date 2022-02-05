@@ -13,22 +13,23 @@ int main() {
   int *p = &num[0][0];
   // looping pertama yaitu 3/ROWS
   for (i = 0; i < ROWS; i++) {
-    cout << endl << "-------------------------------------------" << endl;
+    cout << endl << 	"----------------------------------------------------------------------------------" << endl;
     // looping kedua yaitu 5/COLS
     for (j = 0; j < COLS; j++) {
       cout << "| ";
       // membuat angka hilang
       if (*(p + i * COLS + j) == 0) {
         cout << "\t"
-             << " ";
+             << " "
+             << "\t";
       } else {
         // untuk memunculkan angka dengan pointer
-        cout << "\t" << (*(p + i * COLS + j));
+        cout << "\t" << (*(p + i * COLS + j)) << "\t";
       }
     }
     cout << " |";
   }
-  cout << endl << "-------------------------------------------";
+  cout << endl << 	"----------------------------------------------------------------------------------";
   getch();
   return 0;
 }
