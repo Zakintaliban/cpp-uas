@@ -39,8 +39,7 @@ int main() {
     }
   }
 
-  cout << "TERDAPAT NILAI MAKSIMUM " << max << " DENGAN " << jmlh << " ANGKA"
-       << endl;
+  cout << "TERDAPAT NILAI MAKSIMUM " << max << " DENGAN " << jmlh << " ANGKA" << endl;
 
   // CHECK 50
   int search = 50;
