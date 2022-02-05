@@ -11,8 +11,8 @@ class videoCard {  // nama class
   string model;    // atribut string
   int vram;        // atribut vram
   // dalam membuat function, terdapat dua cara, bisa itu dari dalam class atau
-  // diluar class ini adalah contoh function didalam class int clockSpeed(int
-  // maxclockSpeed) {
+  // diluar class ini adalah contoh function didalam class 
+  // int clockSpeed(int maxclockSpeed) {
   //   return maxclockSpeed;
   // }
   // ini adalah contoh function diluar class, dimana kita menginisialisasikan
@@ -32,7 +32,7 @@ int main() {
   // membuat object lain videoCard
   videoCard videoCardObj2;
   videoCardObj2.merk = "AMD";
-  videoCardObj2.model = "radeon rx 6900 xt ";
+  videoCardObj2.model = "Radeon rx 6900 xt";
   videoCardObj2.vram = 16;
 
   // print value dari object diatas
