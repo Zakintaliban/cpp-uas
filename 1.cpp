@@ -30,18 +30,18 @@ int main() {
 
   cout << "TERDAPAT NILAI MAKSIMUM " << max << endl;
 
-  // JMLH dari MAX
-  int jmlh = 0;
+  // DPLKT dari MAX
+  int dplkt = 0;
   for (i = 0; i < ROWS; i++) {
     for (j = 0; j < COLS; j++) {
       // mencari angka max yang duplikat
       if (*(p + i * COLS + j) == max) {
-        jmlh++;
+        dplkt++;
       }
     }
   }
 
-  cout << "TERDAPAT NILAI MAKSIMUM " << max << " DENGAN " << jmlh << " ANGKA" << endl;
+  cout << "TERDAPAT DUPLIKAT NILAI MAKSIMUM " << max << " DENGAN " << dplkt << " ANGKA" << endl;
 
   // CHECK 50
   int search = 50;
@@ -54,7 +54,6 @@ int main() {
       }
     }
   }
-  // guna memberi info jika ada angka 50
   if (available) {
     cout << "NILAI DENGAN ANGKA " << search << " ADA" << endl;
   } else {
@@ -63,14 +62,14 @@ int main() {
 
   // PRINT
   for (i = 0; i < ROWS; i++) {
-    cout << endl << "-------------------------------------------" << endl;
+    cout << endl << "----------------------------------------------------------------------------------" << endl;
     for (j = 0; j < COLS; j++) {
       cout << "| ";
-      cout << "\t" << (*(p + i * COLS + j));
+      cout << "\t" << (*(p + i * COLS + j)) << "\t";
     }
     cout << " |";
   }
-  cout << endl << "-------------------------------------------";
+  cout << endl << "----------------------------------------------------------------------------------";
   getch();
   return 0;
 }
